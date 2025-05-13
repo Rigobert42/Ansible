@@ -1,0 +1,6 @@
+# Serveur Web Debian
+
+# Indique comment contacter la cible
+# ansible_host : 192.168.3.2 <- commenté car déjà dans hosts
+# Comptes par défaut
+ansible_user : utilisateur
