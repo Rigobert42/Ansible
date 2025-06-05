@@ -1,4 +1,4 @@
-- name: Configuration Interface
+- name: Configuration NAT
   # On va agir sur l'hôte csr1000 dans cet acte
   hosts: csr1000
   # Passe l'étape permettant de récupérer des informations sur
