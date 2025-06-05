@@ -28,7 +28,7 @@ print(dns)
 # Recherche en capturant les éléments entre parenthèse sous la forme
 # (chiffres_répétés) lettre_répété lettre_répeté, ...
 capture=re.search(r'(\d+) \w+ \w+, (\d+) \w+, (\d+)% \w+ \w+, time (\d+)ms',test)
-capture=re.search(r'(\d+) \w+ \w+, (\d+) \w+, (\d+)% \w+ \w+, time (\d+)ms',dns)
+
 # Les éléments sont stocké dans capture.group(1), capture.group(2) ...
 # capture.group (1) correspond au paquets transmis et capture.groupe(2) au reçu
 if capture.group(1)==capture.group(2):
@@ -36,3 +36,10 @@ if capture.group(1)==capture.group(2):
 else:
     print("xxx Problème de connectivité")
     exit(-1)
+    
+capture=re.search(r'Address: (\d+).(\d+).(\d+).(\d+)\n',dns)
+if capture.group(1)!=0:
+    print("+++ Test réalisé avec succès")
+else:
+    print("xxx Problème de connectivité")
+    exit(-2)
