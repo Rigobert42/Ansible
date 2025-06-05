@@ -1,8 +1,8 @@
  Building configuration...
 
-Current configuration : 6747 bytes
+Current configuration : 6997 bytes
 !
-! Last configuration change at 14:50:56 UTC Tue Apr 8 2025 by cisco
+! Last configuration change at 15:13:40 UTC Wed Apr 16 2025 by cisco
 !
 version 16.12
 service timestamps debug datetime msec
@@ -175,29 +175,29 @@ redundancy
 !
 !
 interface GigabitEthernet1
- description VBox
+ description Interface G1 ConfigurC) par Ansible Network
  ip address dhcp
  negotiation auto
  no mop enabled
  no mop sysid
 !
 interface GigabitEthernet2
- no ip address
- shutdown
+ description Interface G2 ConfigurC) par Ansible Network
+ ip address 192.168.2.1 255.255.255.0
  negotiation auto
  no mop enabled
  no mop sysid
 !
 interface GigabitEthernet3
- no ip address
- shutdown
+ description Interface G3 ConfigurC) par Ansible Network
+ ip address 192.168.3.1 255.255.255.0
  negotiation auto
  no mop enabled
  no mop sysid
 !
 interface GigabitEthernet4
- no ip address
- shutdown
+ description Interface G4 ConfigurC) par Ansible Network
+ ip address 192.168.4.1 255.255.255.0
  negotiation auto
  no mop enabled
  no mop sysid
